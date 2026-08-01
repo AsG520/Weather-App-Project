@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: 'Cabin';
+    color: black;
+    font-weight: 750;
+    height: 100vh;
+    background-image: url("login-page-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+.container {
+    height: 465px;
+    width: 400px;
+    background-color: rgba(173, 216, 230, 0.5);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+#username-details, #password-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#remember-and-forgot-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+#remember-me-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#username-field, #password-field {
+    width: 330px;
+    height: 40px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid black;
+    background: none;
+    color: black;
+    font-weight: 750;
+    font-family: 'Cabin';
+    font-size: 15px;
+}
+
+#checkbox {
+    height: 15px;
+    width: 15px;
+}
+
+#login {
+    width: 300px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 750;
+    text-align: center;
+    background-color: rgba(34, 67, 80);
+    color: white;
+    font-size: 15px;
+}
+
+#username-field::placeholder, #password-field::placeholder {
+    color: black;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
