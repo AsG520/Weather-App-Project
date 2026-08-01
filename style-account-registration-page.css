@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    height: 465px;
+    height: 470px;
     width: 400px;
     background-color: rgba(173, 216, 230, 0.5);
     backdrop-filter: blur(8px);
@@ -35,31 +35,7 @@ body {
     flex-direction: column
 }
 
-#username-details, #password-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-}
-
-#remember-and-forgot-layout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 50px;
-}
-
-#remember-me-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 5px;
-}
-
-#username-field, #password-field {
+#first-name-field, #email-address-field, #email-password-field {
     width: 330px;
     height: 40px;
     border-top: none;
@@ -73,12 +49,7 @@ body {
     font-size: 15px;
 }
 
-#checkbox {
-    height: 15px;
-    width: 15px;
-}
-
-#login {
+#sign-up {
     width: 300px;
     height: 45px;
     border-radius: 20px;
@@ -90,18 +61,14 @@ body {
     font-size: 15px;
 }
 
-#username-field::placeholder, #password-field::placeholder {
+#first-name-field::placeholder, #email-address-field::placeholder, #email-password-field::placeholder {
     color: black;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
+#email-address-details, #email-password-details, #first-name-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
 }

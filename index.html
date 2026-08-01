@@ -1,5 +1,4 @@
-<!doctype html>
-<html lang="en">
+<html>
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,50 +9,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Weather App - v.2026</title>
+    <title>Login Page of Weather App - v.2026</title>
   </head>
   <body>
     <div class="container">
-      <div class="search-details">
-        <input type="search" id="search" placeholder="Enter your location" />
-        <img src="search.png" height="25" width="25" id="search-picture" />
-      </div>
-      <div class="header-details">
-        <img src="location.png" height="45" width="50" />
-        <h1>Ontario</h1>
-      </div>
-      <h2>7°C</h2>
-      <div class="wind-and-humidity-layout">
-        <div id="wind-details">
-          <div id="wind-picture-and-label">
-            <figure>
-              <img src="wind.png" height="50" width="50" id="wind-picture" />
-            </figure>
-            <figcaption>Wind Speed (km/h)</figcaption>
-            <input
-              type="text"
-              id="wind-kilometers-per-hour"
-              readonly
-              value="1"
-            />
-          </div>
+      <h1>Login</h1>
+      <form>
+        <div id="username-details">
+          <input
+            type="text"
+            id="username-field"
+            placeholder="Enter your username"
+            required
+          />
+          <img src="user-picture.png" height="25" width="25" />
         </div>
-        <div id="humidity-details">
-          <div id="humidity-picture-and-label">
-            <figure>
-              <img
-                src="humidity.png"
-                height="50"
-                width="50"
-                id="humidity-picture"
-              />
-            </figure>
-            <figcaption>Humidity (%)</figcaption>
-            <input type="text" id="humidity-percentage" readonly value="1" />
-          </div>
+        <br />
+        <div id="password-details">
+          <input
+            type="password"
+            id="password-field"
+            placeholder="Enter your password"
+            required
+          />
+          <img src="padlock-picture.png" height="25" width="25" />
         </div>
-      </div>
+        <br />
+        <div id="remember-and-forgot-layout">
+          <div id="remember-me-details">
+            <input type="checkbox" id="checkbox" />
+            <label>Remember me</label>
+          </div>
+          <label>Forgot Password?</label>
+        </div>
+        <br />
+        <input type="button" value="Login" id="login" />
+      </form>
+      <img src="google-logo.png" height="40" width="40" />
+      <br />
+      <label
+        >Don't have an account?
+        <span style="text-decoration-line: underline" id="register-word"
+          >Register</span
+        ></label
+      >
     </div>
+    <script type="module" src="firebaseauth.js"></script>
     <script src="function.js"></script>
   </body>
 </html>

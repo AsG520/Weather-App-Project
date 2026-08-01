@@ -8,49 +8,58 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style-login-page.css" />
-    <title>Login Page of Weather App - v.2026</title>
+    <link rel="stylesheet" href="style-account-registration-page.css" />
+    <title>Account Registration Page of Weather App - v.2026</title>
   </head>
   <body>
     <div class="container">
-      <h1>Login</h1>
+      <h1>Account Registration</h1>
       <form>
-        <div id="username-details">
+        <div id="first-name-details">
           <input
             type="text"
-            id="username-field"
-            placeholder="Enter your username"
+            id="first-name-field"
+            placeholder="Enter your first name"
+            required
           />
           <img src="user-picture.png" height="25" width="25" />
         </div>
         <br />
-        <div id="password-details">
+        <div id="email-address-details">
+          <input
+            type="text"
+            id="email-address-field"
+            placeholder="Enter your email address"
+            required
+          />
+          <img src="user-picture.png" height="25" width="25" />
+        </div>
+        <br />
+        <div id="email-password-details">
           <input
             type="password"
-            id="password-field"
+            id="email-password-field"
             placeholder="Enter your password"
+            required
           />
           <img src="padlock-picture.png" height="25" width="25" />
         </div>
         <br />
-        <div id="remember-and-forgot-layout">
-          <div id="remember-me-details">
-            <input type="checkbox" id="checkbox" />
-            <label>Remember me</label>
-          </div>
-          <label>Forgot Password?</label>
-        </div>
+        <input type="button" id="sign-up" value="Sign Up" />
         <br />
-        <input type="button" value="Login" id="login" />
+        <br />
+        <img src="google-logo.png" height="40" width="40" />
+        <br />
+        <br />
+        <label
+          >Already have an account!
+          <span style="text-decoration-line: underline" id="login-word"
+            >Login</span
+          ></label
+        >
       </form>
-      <br />
-      <img src="google-logo.png" height="40" width="40" />
-      <br />
-      <label
-        >Don't have an account?
-        <span style="text-decoration-line: underline">Register</span></label
-      >
     </div>
     <script type="module" src="firebaseauth.js"></script>
+    <script src="function-account-registration-page.js"></script>
   </body>
 </html>

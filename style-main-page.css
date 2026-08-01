@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: 'Cabin';
+    color: white;
+    font-weight: 750;
+    height: 100vh;
+    background-color: black;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+#search-picture {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#search-picture:hover {
+    transform: scale(1.1);
+}
+
+#search-picture:active {
+    transform: translateY(1px);
+}
+
+h1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: -10px;
+}
+
+.header-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 380px;
+    height: 400px;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    border-radius: 20px;
+}
+
+#humidity-percentage, #wind-kilometers-per-hour {
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    text-align: center;
+    font-weight: 750;
+}
+
+.search-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 125px;
+}
+
+#wind-details, #humidity-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 350px;
+}
+
+.wind-and-humidity-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -25px;
+    gap: 65px;
+}
+
+#wind-picture-and-label, #humidity-picture-and-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#search {
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    text-align: left;
+    border: none;
+    font-family: 'Cabin';
+}
+
+#search::placeholder, input[type="search"] {
+    color: black;
+    font-weight: 750;
+}
+
+#submit {
+    width: 200px;
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

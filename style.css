@@ -5,10 +5,13 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     font-family: 'Cabin';
-    color: white;
+    color: black;
     font-weight: 750;
     height: 100vh;
-    background-color: black;
+    background-image: url("login-page-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
@@ -18,112 +21,77 @@ body {
     animation-fill-mode: forwards;
 }
 
-#search-picture {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-}
-
-#search-picture:hover {
-    transform: scale(1.1);
-}
-
-#search-picture:active {
-    transform: translateY(1px);
-}
-
-h1 {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-h2 {
-    margin-top: -10px;
-}
-
-.header-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
 .container {
+    height: 465px;
+    width: 400px;
+    background-color: rgba(173, 216, 230, 0.5);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 380px;
-    height: 400px;
-    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
-    border-radius: 20px;
+    justify-content: center;
+    flex-direction: column
 }
 
-#humidity-percentage, #wind-kilometers-per-hour {
-    width: 100px;
-    height: 20px;
-    border-radius: 20px;
-    border: none;
-    background: none;
-    text-align: center;
-    font-weight: 750;
-}
-
-.search-details {
+#username-details, #password-details {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 10px;
-    margin-top: 125px;
 }
 
-#wind-details, #humidity-details {
+#remember-and-forgot-layout {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    height: 350px;
+    gap: 50px;
 }
 
-.wind-and-humidity-layout {
+#remember-me-details {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: -25px;
-    gap: 65px;
+    gap: 5px;
 }
 
-#wind-picture-and-label, #humidity-picture-and-label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-#search {
-    width: 300px;
-    height: 35px;
-    border-radius: 20px;
-    text-align: left;
-    border: none;
-    font-family: 'Cabin';
-}
-
-#search::placeholder, input[type="search"] {
+#username-field, #password-field {
+    width: 330px;
+    height: 40px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid black;
+    background: none;
     color: black;
     font-weight: 750;
+    font-family: 'Cabin';
+    font-size: 15px;
 }
 
-#submit {
-    width: 200px;
-    height: 25px;
+#checkbox {
+    height: 15px;
+    width: 15px;
+}
+
+#login {
+    width: 300px;
+    height: 45px;
     border-radius: 20px;
     border: none;
+    font-weight: 750;
+    text-align: center;
+    background-color: rgba(34, 67, 80);
+    color: white;
+    font-size: 15px;
+}
+
+#username-field::placeholder, #password-field::placeholder {
+    color: black;
 }
 
 @keyframes fadeIn {
