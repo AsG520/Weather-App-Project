@@ -23,7 +23,7 @@ body {
 
 .container {
     height: 470px;
-    width: 400px;
+    width: 350px;
     background-color: rgba(173, 216, 230, 0.5);
     backdrop-filter: blur(8px);
     border-radius: 20px;
@@ -36,7 +36,7 @@ body {
 }
 
 #first-name-field, #email-address-field, #email-password-field {
-    width: 330px;
+    width: 275px;
     height: 40px;
     border-top: none;
     border-right: none;
