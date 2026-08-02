@@ -1,8 +1,7 @@
 ﻿# Weather-App-Project
 
-## Summary of App
-
 ## Visual of App
+- Coming Soon!
 
 ## Features in App
 - Secure User Authentication - Users can create an account, sign in and access their data using Firebase Authentication.
