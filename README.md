@@ -28,3 +28,10 @@
 - Run the program using your Live Reloading or Hot Reloading downloaded extension.
 
 ## References
+- Simple Login & Register with Firebase Authentication & Firestore using JavaScript | HTML | CSS - https://youtu.be/_Xczf06n6x0?si=irFb-LWgykuAcHPE
+- Flaticon - https://www.flaticon.com/free-icons/favicon
+- Google Fonts - https://fonts.google.com/
+- Firebase - https://firebase.google.com/
+
+## Team
+- <a href="https://github.com/AsG520" target="_blank">Amanjot.S</a>: Front-End & Back-End Developer
