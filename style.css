@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    height: 465px;
+    height: 470px;
     width: 350px;
     background-color: rgba(173, 216, 230, 0.5);
     backdrop-filter: blur(8px);
@@ -59,6 +59,19 @@ body {
     gap: 5px;
 }
 
+span {
+    font-weight: 900;
+    text-decoration-line: underline;
+}
+
+#remember-me-word:hover, #forgot-password-word:hover, h1:hover {
+    text-decoration-line: underline;
+}
+
+#google-logo:hover, #user-picture:hover, #padlock-picture:hover {
+    transform: scale(1.1);
+}
+
 #username-field, #password-field {
     width: 275px;
     height: 40px;
@@ -71,6 +84,12 @@ body {
     font-weight: 750;
     font-family: 'Cabin';
     font-size: 15px;
+}
+
+#user-picture, #padlock-picture {
+    padding: 5px;
+    background: rgb(63, 102, 118);
+    border-radius: 10px;
 }
 
 #checkbox {
@@ -88,6 +107,10 @@ body {
     background-color: rgba(34, 67, 80);
     color: white;
     font-size: 15px;
+}
+
+#login:hover {
+    background-color: rgba(34, 67, 80, 0.8);
 }
 
 #username-field::placeholder, #password-field::placeholder {

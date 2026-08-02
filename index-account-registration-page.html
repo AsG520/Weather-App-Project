@@ -9,6 +9,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style-account-registration-page.css" />
+    <link rel="icon" type="image/x-icon" href="logo.jpg" />
     <title>Account Registration Page of Weather App - v.2026</title>
   </head>
   <body>
@@ -22,7 +23,7 @@
             placeholder="Enter your first name"
             required
           />
-          <img src="id-card.png" height="25" width="25" />
+          <img src="id-card.png" height="25" width="25" id="id-card" />
         </div>
         <br />
         <div id="email-address-details">
@@ -32,7 +33,12 @@
             placeholder="Enter your email address"
             required
           />
-          <img src="user-picture.png" height="25" width="25" />
+          <img
+            src="user-picture.png"
+            height="25"
+            width="25"
+            id="user-picture"
+          />
         </div>
         <br />
         <div id="email-password-details">
@@ -42,18 +48,25 @@
             placeholder="Enter your password"
             required
           />
-          <img src="padlock-picture.png" height="25" width="25" />
+          <img
+            src="padlock-picture.png"
+            height="25"
+            width="25"
+            id="padlock-picture"
+          />
         </div>
         <br />
         <input type="button" id="sign-up" value="Sign Up" />
         <br />
         <br />
-        <img src="google-logo.png" height="40" width="40" />
+        <img src="google-logo.png" height="40" width="40" id="google-logo" />
         <br />
         <br />
         <label
           >Already have an account!
-          <span style="text-decoration-line: underline" id="login-word"
+          <span
+            style="text-decoration-line: underline; font-weight: 900"
+            id="login-word"
             >Login</span
           ></label
         >

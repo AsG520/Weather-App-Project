@@ -9,6 +9,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="logo.jpg" />
     <title>Login Page of Weather App - v.2026</title>
   </head>
   <body>
@@ -22,7 +23,12 @@
             placeholder="Enter your username"
             required
           />
-          <img src="user-picture.png" height="25" width="25" />
+          <img
+            src="user-picture.png"
+            height="25"
+            width="25"
+            id="user-picture"
+          />
         </div>
         <br />
         <div id="password-details">
@@ -32,26 +38,28 @@
             placeholder="Enter your password"
             required
           />
-          <img src="padlock-picture.png" height="25" width="25" />
+          <img
+            src="padlock-picture.png"
+            height="25"
+            width="25"
+            id="padlock-picture"
+          />
         </div>
         <br />
         <div id="remember-and-forgot-layout">
           <div id="remember-me-details">
             <input type="checkbox" id="checkbox" />
-            <label>Remember me</label>
+            <label id="remember-me-word">Remember me</label>
           </div>
-          <label>Forgot Password?</label>
+          <label id="forgot-password-word">Forgot Password?</label>
         </div>
         <br />
         <input type="button" value="Login" id="login" />
       </form>
-      <img src="google-logo.png" height="40" width="40" />
+      <img src="google-logo.png" height="40" width="40" id="google-logo" />
       <br />
       <label
-        >Don't have an account?
-        <span style="text-decoration-line: underline" id="register-word"
-          >Register</span
-        ></label
+        >Don't have an account? <span id="register-word">Register</span></label
       >
     </div>
     <script type="module" src="firebaseauth.js"></script>

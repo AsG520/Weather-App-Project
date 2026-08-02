@@ -56,7 +56,7 @@ body {
     border: none;
     font-weight: 750;
     text-align: center;
-    background-color: rgba(34, 67, 80);
+    background-color: rgb(34, 67, 80);
     color: white;
     font-size: 15px;
 }
@@ -65,10 +65,32 @@ body {
     color: black;
 }
 
+#google-logo:hover, #padlock-picture:hover, #user-picture:hover, #id-card:hover {
+    transform: scale(1.1);
+}
+
+#sign-up:hover {
+    background-color: rgba(34, 67, 80, 0.8);    
+}
+
+h1:hover {
+    text-decoration-line: underline;
+}
+
+#padlock-picture, #user-picture, #id-card {
+    padding: 5px;
+    background: rgb(63, 102, 118);
+    border-radius: 10px;
+}
+
 #email-address-details, #email-password-details, #first-name-details {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 10px;
+}
+
+#login-word:hover {
+    font-weight: 900;
 }
