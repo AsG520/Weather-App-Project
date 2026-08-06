@@ -1,10 +1,21 @@
 ﻿# Weather-App-Project
 
-## Summary of App
+## Visual of Weather App - Main Page
+- Coming Soon!
 
-## Visual of App
+## Visual of Weather App - Login Page
+<img width="304" height="287" alt="Image" src="https://github.com/user-attachments/assets/03e51092-98b6-4c5a-a7f4-8ac8fe26875c" />
+
+## Visual of Weather App - Account Registration Page
+<img width="304" height="287" alt="Image" src="https://github.com/user-attachments/assets/8d801735-dc4a-4f67-8d1d-fedb3f5b9a15" />
 
 ## Features in App
+- Secure User Authentication - Users can create an account, sign in and access their data using Firebase Authentication.
+- OpenWeather API - Data is collected from the API that provides instant access to weather APIs through self-service subscriptions for developers, analysts, and businesses.
+- Wind Speed - Users can view the speed of wind in kilometers per hour for the specific location they searched.
+- Humidity Percentage - Users can view the percentage of humidity for the specific location they searched.
+- Temperature Label - Users can view the temperature for the specific location they searched.
+- Responsive Image Display - Depending on the temperature conditions the image will showcase a image relating to that weather (e.g., 25°C will show a sun).
 
 ## How it Works
 - User must sign in to create an account in the account registration page by filling out their first name, email address, and password or have the option to choose Google instead.
@@ -32,6 +43,7 @@
 - Flaticon - https://www.flaticon.com/free-icons/favicon
 - Google Fonts - https://fonts.google.com/
 - Firebase - https://firebase.google.com/
+- OpenWeather - https://openweathermap.org/
 
 ## Team
 - <a href="https://github.com/AsG520" target="_blank">Amanjot.S</a>: Front-End & Back-End Developer
