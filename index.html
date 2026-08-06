@@ -16,11 +16,12 @@
     <div class="container">
       <h1>Login</h1>
       <form>
-        <div id="username-details">
+        <div id="signInMessage" class="messageDiv" style="display: none"></div>
+        <div id="email-details">
           <input
             type="text"
-            id="username-field"
-            placeholder="Enter your username"
+            id="email-field"
+            placeholder="Enter your email"
             required
           />
           <img
@@ -62,7 +63,7 @@
         >Don't have an account? <span id="register-word">Register</span></label
       >
     </div>
-    <script type="module" src="firebaseauth.js"></script>
     <script src="function.js"></script>
+    <script type="module" src="firebaseauth.js"></script>
   </body>
 </html>
