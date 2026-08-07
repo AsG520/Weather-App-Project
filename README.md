@@ -1,5 +1,14 @@
 ﻿# Weather-App-Project
 
+## Table of Contents
+- Visuals of App
+- Features in App
+- How it Works
+- Requirements
+- How to Run
+- References
+- Team
+
 ## Visual of Weather App - Main Page
 - Coming Soon!
 
