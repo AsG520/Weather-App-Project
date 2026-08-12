@@ -10,50 +10,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style-main-page.css" />
+    <link rel="icon" type="image/x-icon" href="logo.jpg" />
     <title>Weather App - v.2026</title>
   </head>
   <body>
     <div class="container">
-      <div class="search-details">
-        <input type="search" id="search" placeholder="Enter your location" />
-        <img src="search.png" height="25" width="25" id="search-picture" />
-      </div>
-      <div class="header-details">
-        <img src="location.png" height="45" width="50" />
-        <h1>Ontario</h1>
-      </div>
-      <h2>7°C</h2>
-      <div class="wind-and-humidity-layout">
-        <div id="wind-details">
-          <div id="wind-picture-and-label">
-            <figure>
-              <img src="wind.png" height="50" width="50" id="wind-picture" />
-            </figure>
-            <figcaption>Wind Speed (km/h)</figcaption>
-            <input
-              type="text"
-              id="wind-kilometers-per-hour"
-              readonly
-              value="1"
-            />
-          </div>
+      <form class="weatherForm">
+        <div class="search-details">
+          <input
+            type="search"
+            id="search"
+            placeholder="   Enter your location"
+          />
+          <img src="search.png" height="25" width="25" id="search-picture" />
         </div>
-        <div id="humidity-details">
-          <div id="humidity-picture-and-label">
-            <figure>
-              <img
-                src="humidity.png"
-                height="50"
-                width="50"
-                id="humidity-picture"
+        <br />
+        <div class="header-details">
+          <img
+            src="location.png"
+            height="45"
+            width="50"
+            id="location-picture"
+          />
+          <h1 id="location-display">Location</h1>
+        </div>
+        <div id="temperature-and-celsius-details">
+          <input
+            type="number"
+            id="temperature-display"
+            readonly
+            value="0"
+          /><span style="font-size: 25px; font-weight: 750">°C</span>
+        </div>
+        <br />
+        <label id="description">Description of weather!</label>
+        <br />
+        <label id="weather-emoji">🌏</label>
+        <div class="bottom-layout">
+          <div id="humidity-details">
+            <div id="humidity-picture-and-label">
+              <figure>
+                <img
+                  src="humidity.png"
+                  height="50"
+                  width="50"
+                  id="humidity-picture"
+                />
+              </figure>
+              <figcaption>Humidity (%)</figcaption>
+              <input
+                type="number"
+                id="humidity-percentage"
+                readonly
+                value="0"
               />
-            </figure>
-            <figcaption>Humidity (%)</figcaption>
-            <input type="text" id="humidity-percentage" readonly value="1" />
+            </div>
+          </div>
+          <div id="wind-details">
+            <div id="wind-picture-and-label">
+              <figure>
+                <img src="wind.png" height="50" width="50" id="wind-picture" />
+              </figure>
+              <figcaption>Wind Speed (km/h)</figcaption>
+              <input
+                type="number"
+                id="wind-kilometers-per-hour"
+                readonly
+                value="0"
+              />
+            </div>
+          </div>
+          <div id="pressure-details">
+            <div id="pressure-picture-and-label">
+              <figure>
+                <img
+                  src="pressure.png"
+                  height="50"
+                  width="50"
+                  id="pressure-picture"
+                />
+              </figure>
+              <figcaption>Pressure (kPa)</figcaption>
+              <input type="number" id="pressure-value" readonly value="0" />
+            </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
     <script type="module" src="firebaseauth.js"></script>
+    <script src="function-main-page.js"></script>
   </body>
 </html>
