@@ -1,5 +1,14 @@
 ﻿# Weather-App-Project
 
+## Table of Contents
+- Visuals of App
+- Features in App
+- How it Works
+- Requirements
+- How to Run
+- References
+- Team
+
 ## Visual of Weather App - Main Page
 - Coming Soon!
 
@@ -44,6 +53,7 @@
 - Google Fonts - https://fonts.google.com/
 - Firebase - https://firebase.google.com/
 - OpenWeather - https://openweathermap.org/
+- Create a weather app with JavaScript! - https://youtu.be/VaDUGPMjzOM?si=bw4IdhclEahd8oTY
 
 ## Team
 - <a href="https://github.com/AsG520" target="_blank">Amanjot.S</a>: Front-End & Back-End Developer
