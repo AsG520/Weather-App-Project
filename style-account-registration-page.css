@@ -5,10 +5,10 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     font-family: 'Cabin';
-    color: black;
+    color: white;
     font-weight: 750;
     height: 100vh;
-    background-image: url("login-page-background.png");
+    background-image: url("login-and-registration-page-background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,9 +22,9 @@ body {
 }
 
 .container {
-    height: 470px;
+    height: 510px;
     width: 350px;
-    background-color: rgba(173, 216, 230, 0.5);
+    background-color: rgba(29, 28, 67, 0.5);
     backdrop-filter: blur(8px);
     border-radius: 20px;
     text-align: center;
@@ -46,15 +46,17 @@ body {
     animation: fadeOut 7s forwards;
 }
 
-#first-name-field, #email-address-field, #email-password-field {
+#first-name-field,
+#email-address-field,
+#email-password-field {
     width: 275px;
     height: 40px;
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     background: none;
-    color: black;
+    color: white;
     font-weight: 750;
     font-family: 'Cabin';
     font-size: 15px;
@@ -67,34 +69,46 @@ body {
     border: none;
     font-weight: 750;
     text-align: center;
-    background-color: rgb(34, 67, 80);
+    background-color: rgba(59, 63, 93);
+    box-shadow: 0px 0px 20px 2px white;
     color: white;
     font-size: 15px;
 }
 
-#first-name-field::placeholder, #email-address-field::placeholder, #email-password-field::placeholder {
-    color: black;
+#first-name-field::placeholder,
+#email-address-field::placeholder,
+#email-password-field::placeholder {
+    color: white;
 }
 
-#google-logo:hover, #padlock-picture:hover, #user-picture:hover, #id-card:hover {
+#google-logo:hover,
+#padlock-picture:hover,
+#user-picture:hover,
+#id-card:hover {
     transform: scale(1.1);
 }
 
 #sign-up:hover {
-    background-color: rgba(34, 67, 80, 0.8);    
+    background-color: rgba(34, 67, 80, 0.8);
 }
 
 h1:hover {
     text-decoration-line: underline;
 }
 
-#padlock-picture, #user-picture, #id-card {
+#padlock-picture,
+#user-picture,
+#id-card,
+#google-logo {
     padding: 5px;
-    background: rgb(63, 102, 118);
+    background-color: rgb(59, 63, 93);
     border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px white;
 }
 
-#email-address-details, #email-password-details, #first-name-details {
+#email-address-details,
+#email-password-details,
+#first-name-details {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,9 +124,11 @@ h1:hover {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 0.5;
     }
+
     100% {
         opacity: 1;
     }

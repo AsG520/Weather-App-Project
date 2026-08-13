@@ -5,12 +5,12 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     font-family: 'Cabin';
-    color: black;
+    color: white;
     font-weight: 750;
     height: 100vh;
-    background-image: url("login-page-background.png");
+    background-image: url("login-and-registration-page-background.png");
     background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-size: cover;
     animation-name: fadeIn;
     animation-duration: 1s;
@@ -24,7 +24,7 @@ body {
 .container {
     height: 470px;
     width: 350px;
-    background-color: rgba(173, 216, 230, 0.5);
+    background-color: rgba(29, 28, 67, 0.5);
     backdrop-filter: blur(8px);
     border-radius: 20px;
     text-align: center;
@@ -46,7 +46,8 @@ body {
     animation: fadeOut 7s forwards;
 }
 
-#email-details, #password-details {
+#email-details,
+#password-details {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,32 +76,40 @@ span {
     text-decoration-line: underline;
 }
 
-#remember-me-word:hover, #forgot-password-word:hover, h1:hover {
+#remember-me-word:hover,
+#forgot-password-word:hover,
+h1:hover {
     text-decoration-line: underline;
 }
 
-#google-logo:hover, #user-picture:hover, #padlock-picture:hover {
+#google-logo:hover,
+#user-picture:hover,
+#padlock-picture:hover {
     transform: scale(1.1);
 }
 
-#email-field, #password-field {
+#email-field,
+#password-field {
     width: 275px;
     height: 40px;
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     background: none;
-    color: black;
+    color: white;
     font-weight: 750;
     font-family: 'Cabin';
     font-size: 15px;
 }
 
-#user-picture, #padlock-picture {
+#user-picture,
+#padlock-picture,
+#google-logo {
     padding: 5px;
-    background: rgb(63, 102, 118);
+    background-color: rgba(59, 63, 93);
     border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px white;
 }
 
 #checkbox {
@@ -115,26 +124,34 @@ span {
     border: none;
     font-weight: 750;
     text-align: center;
-    background-color: rgba(34, 67, 80);
+    background-color: rgba(59, 63, 93);
+    box-shadow: 0px 0px 20px 2px white;
     color: white;
     font-size: 15px;
+}
+
+#register-word {
+    font-weight: 900;
 }
 
 #login:hover {
     background-color: rgba(34, 67, 80, 0.8);
 }
 
-#email-field::placeholder, #password-field::placeholder {
-    color: black;
+#email-field::placeholder,
+#password-field::placeholder {
+    color: white;
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 0.5;
     }
+
     100% {
         opacity: 1;
     }
