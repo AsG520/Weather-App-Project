@@ -13,13 +13,13 @@
 ## Video Clip of App 
 - Coming Soon!
 
-## Visual of Weather App - Main Page
+## Visual of App - Main Page
 - Coming Soon!
 
-## Visual of Weather App - Login Page
+## Visual of App - Login Page
 - Coming Soon!
  
-## Visual of Weather App - Account Registration Page
+## Visual of App - Account Registration Page
 - Coming Soon!
 
 ## Features in App
