@@ -22,9 +22,10 @@ body {
 }
 
 .container {
-    height: 510px;
+    height: 440px;
     width: 350px;
     background-color: rgba(29, 28, 67, 0.5);
+    box-shadow: 0px 0px 20px 2px white;
     backdrop-filter: blur(8px);
     border-radius: 20px;
     text-align: center;

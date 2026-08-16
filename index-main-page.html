@@ -47,51 +47,74 @@
         <br />
         <label id="weather-emoji">🌏</label>
         <div class="bottom-layout">
-          <div id="humidity-details">
-            <div id="humidity-picture-and-label">
-              <figure>
-                <img
-                  src="humidity.png"
-                  height="50"
-                  width="50"
-                  id="humidity-picture"
+          <div id="bottom-layout-top-row">
+            <div id="humidity-details">
+              <div id="humidity-picture-and-label">
+                <figure>
+                  <img
+                    src="humidity.png"
+                    height="50"
+                    width="50"
+                    id="humidity-picture"
+                  />
+                </figure>
+                <figcaption>Humidity (%)</figcaption>
+                <input
+                  type="number"
+                  id="humidity-percentage"
+                  readonly
+                  value="0"
                 />
-              </figure>
-              <figcaption>Humidity (%)</figcaption>
-              <input
-                type="number"
-                id="humidity-percentage"
-                readonly
-                value="0"
-              />
+              </div>
+            </div>
+            <div id="wind-details">
+              <div id="wind-picture-and-label">
+                <figure>
+                  <img
+                    src="wind.png"
+                    height="50"
+                    width="50"
+                    id="wind-picture"
+                  />
+                </figure>
+                <figcaption>Wind Speed (km/h)</figcaption>
+                <input
+                  type="number"
+                  id="wind-kilometers-per-hour"
+                  readonly
+                  value="0"
+                />
+              </div>
             </div>
           </div>
-          <div id="wind-details">
-            <div id="wind-picture-and-label">
-              <figure>
-                <img src="wind.png" height="50" width="50" id="wind-picture" />
-              </figure>
-              <figcaption>Wind Speed (km/h)</figcaption>
-              <input
-                type="number"
-                id="wind-kilometers-per-hour"
-                readonly
-                value="0"
-              />
+          <div id="bottom-layout-bottom-row">
+            <div id="pressure-details">
+              <div id="pressure-picture-and-label">
+                <figure>
+                  <img
+                    src="pressure.png"
+                    height="50"
+                    width="50"
+                    id="pressure-picture"
+                  />
+                </figure>
+                <figcaption>Pressure (kPa)</figcaption>
+                <input type="number" id="pressure-value" readonly value="0" />
+              </div>
             </div>
-          </div>
-          <div id="pressure-details">
-            <div id="pressure-picture-and-label">
-              <figure>
-                <img
-                  src="pressure.png"
-                  height="50"
-                  width="50"
-                  id="pressure-picture"
-                />
-              </figure>
-              <figcaption>Pressure (kPa)</figcaption>
-              <input type="number" id="pressure-value" readonly value="0" />
+            <div id="wind-angle-details">
+              <div id="wind-angle-picture-and-label">
+                <figure>
+                  <img
+                    src="wind-angle.png"
+                    height="50"
+                    width="50"
+                    id="wind-angle-picture"
+                  />
+                </figure>
+                <figcaption>Wind Angle (θ)</figcaption>
+                <input type="number" id="wind-angle-value" readonly value="0" />
+              </div>
             </div>
           </div>
         </div>

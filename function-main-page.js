@@ -48,7 +48,8 @@ function displayWeatherInfo(data) {
             pressure
         },
         wind: {
-            speed
+            speed,
+            deg
         },
         weather: [{
             description,

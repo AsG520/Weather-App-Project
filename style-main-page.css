@@ -16,7 +16,6 @@ body {
     animation-iteration-count: 1;
     animation-play-state: running;
     animation-fill-mode: forwards;
-    overflow-y: hidden;
 }
 
 #search-picture {
@@ -83,8 +82,8 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 430px;
-    height: 550px;
+    width: 350px;
+    height: 800px;
     background-color: rgba(29, 28, 67, 0.5);
     border-radius: 20px;
     box-shadow: 0px 0px 20px 2px white;
@@ -92,7 +91,8 @@ h1 {
 
 #humidity-percentage,
 #wind-kilometers-per-hour,
-#pressure-value {
+#pressure-value, 
+#wind-angle-value {
     width: 100px;
     height: 20px;
     border-radius: 20px;
@@ -109,12 +109,13 @@ h1 {
     align-items: center;
     flex-direction: row;
     gap: 10px;
-    margin-top: 125px;
+    margin-top: 150px;
 }
 
 #wind-details,
 #humidity-details,
-#pressure-details {
+#pressure-details, 
+#wind-angle-details {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,13 +153,29 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 200px;
+}
+
+#bottom-layout-bottom-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    margin-top: -100px;
+    margin-top: -400px;
+}
+
+#bottom-layout-top-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 #wind-picture-and-label,
 #humidity-picture-and-label,
-#pressure-picture-and-label {
+#pressure-picture-and-label, 
+#wind-angle-picture-and-label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,14 +186,16 @@ h1 {
 #wind-picture:hover,
 #humidity-picture:hover,
 #location-picture:hover,
-#pressure-picture:hover {
+#pressure-picture:hover, 
+#wind-angle-picture:hover {
     transform: scale(1.1);
 }
 
 #wind-picture,
 #humidity-picture,
 #location-picture,
-#pressure-picture {
+#pressure-picture, 
+#wind-angle-picture {
     background-color: rgba(59, 63, 93);
     padding: 5px;
     border-radius: 20px;
@@ -190,7 +209,7 @@ h1 {
 }
 
 #search {
-    width: 330px;
+    width: 280px;
     height: 35px;
     border-radius: 20px;
     text-align: left;

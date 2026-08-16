@@ -16,6 +16,9 @@
     <div class="container">
       <h1>Login</h1>
       <form>
+        <div id="customAlert" class="alertBox">
+          <label id="alertText"></label>
+        </div>
         <div id="signInMessage" class="messageDiv" style="display: none"></div>
         <div id="email-details">
           <input
@@ -23,6 +26,7 @@
             id="email-field"
             placeholder="Enter your email"
             required
+            aria-label="Enter your email."
           />
           <img
             src="user-picture.png"
@@ -38,6 +42,7 @@
             id="password-field"
             placeholder="Enter your password"
             required
+            aria-label="Enter your password."
           />
           <img
             src="padlock-picture.png"
@@ -49,13 +54,13 @@
         <br />
         <div id="remember-and-forgot-layout">
           <div id="remember-me-details">
-            <input type="checkbox" id="checkbox" />
+            <input type="checkbox" id="checkbox" aria-label="Remember me." />
             <label id="remember-me-word">Remember me</label>
           </div>
           <label id="forgot-password-word">Forgot Password?</label>
         </div>
         <br />
-        <input type="button" value="Login" id="login" />
+        <input type="button" value="Login" id="login" aria-label="Login" />
         <br />
         <br />
       </form>
@@ -65,6 +70,7 @@
         >Don't have an account? <span id="register-word">Register</span></label
       >
     </div>
+    <script type="module" src="google.js"></script>
     <script src="function.js"></script>
     <script type="module" src="firebaseauth.js"></script>
   </body>

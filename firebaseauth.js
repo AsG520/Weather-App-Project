@@ -30,6 +30,18 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const db = getFirestore(app);
+
+function customAlert(message) {
+    const alertBox = document.getElementById("customAlert");
+
+    document.getElementById("alertText").textContent = message;
+    alertBox.style.display = "block";
+
+    setTimeout(() => {
+        alertBox.style.display = "none";
+    }, 3000); // Hides after 3 seconds
+}
 
 function showMessage(message, divId) {
     var messageDiv = document.getElementById(divId);
