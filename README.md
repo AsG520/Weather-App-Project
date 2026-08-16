@@ -1,22 +1,22 @@
-﻿# ⛅ Weather-App-Project
+# ⛅ Weather App Project
 
 ## 📘 Table of Contents
-- Visuals of App
-- Features in App
-- How it Works
-- Requirements
-- How to Run
-- References
-- Team
+- 🎨 Visuals of App
+- 🔥 Features in App
+- 🛠️ How it Works
+- 🎯 Requirements
+- 💻 How to Run
+- 🌐 References
+- 🤝 Team
 
 ## 🎨 Visual of Weather App - Main Page
 - Coming Soon!
 
 ## 🎨 Visual of Weather App - Login Page
-<img width="304" height="287" alt="Image" src="https://github.com/user-attachments/assets/03e51092-98b6-4c5a-a7f4-8ac8fe26875c" />
-
+- Coming Soon!
+ 
 ## 🎨 Visual of Weather App - Account Registration Page
-<img width="304" height="287" alt="Image" src="https://github.com/user-attachments/assets/8d801735-dc4a-4f67-8d1d-fedb3f5b9a15" />
+- Coming Soon!
 
 ## 🔥 Features in App
 - Secure User Authentication - Users can create an account, sign in and access their data using Firebase Authentication.
