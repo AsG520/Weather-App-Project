@@ -10,6 +10,7 @@ let pressureDisplay = document.getElementById("pressure-value");
 let descriptionDisplay = document.getElementById("description");
 let weatherEmojiDisplay = document.getElementById("weather-emoji");
 let locationDisplay = document.getElementById("location-display");
+let windAngleDisplay = document.getElementById("wind-angle-value");
 
 searchPicture.addEventListener("click", async event => {
     event.preventDefault();
@@ -65,6 +66,7 @@ function displayWeatherInfo(data) {
     descriptionDisplay.innerHTML = `${description}`;
     weatherEmojiDisplay.textContent = getWeatherEmoji(id);
     locationDisplay.textContent = cityInput.value;
+    windAngleDisplay.value = `${Math.floor(deg)}`;
 }
 
 function getWeatherEmoji(weatherId) {
