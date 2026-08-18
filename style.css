@@ -1,3 +1,4 @@
+/* HTML Components */
 body {
     display: flex;
     justify-content: center;
@@ -21,6 +22,12 @@ body {
     animation-fill-mode: forwards;
 }
 
+span {
+    font-weight: 900;
+    text-decoration-line: underline;
+}
+
+/* HTML Classes */
 .container {
     height: 470px;
     width: 350px;
@@ -47,6 +54,7 @@ body {
     animation: fadeOut 7s forwards;
 }
 
+/* HTML IDs */ 
 #email-details,
 #password-details {
     display: flex;
@@ -70,11 +78,6 @@ body {
     align-items: center;
     flex-direction: row;
     gap: 5px;
-}
-
-span {
-    font-weight: 900;
-    text-decoration-line: underline;
 }
 
 #remember-me-word:hover,
@@ -139,11 +142,13 @@ h1:hover {
     background-color: rgba(34, 67, 80, 0.8);
 }
 
+/* HTML Pseudo-Element Notation */
 #email-field::placeholder,
 #password-field::placeholder {
     color: white;
 }
 
+/* HTML @keyframes Animations */
 @keyframes fadeIn {
     0% {
         opacity: 0;

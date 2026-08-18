@@ -16,7 +16,7 @@ import {
     query,
     where,
     getDocs
-} from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js" // connects to Firebase's database, Firebase stores UID, Email and password, while Firestore holds other info
+} from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js" 
 
 import {
     getAuth,
@@ -49,11 +49,11 @@ function customAlert(message) {
 
     setTimeout(() => {
         alertBox.style.display = "none";
-    }, 3000); // Hides after 3 seconds
+    }, 3000); 
 }
 
 const forgotPassword = document.getElementById("forgot-password-word");
-// console.log(forgotPassword);
+
 if (forgotPassword) {
     forgotPassword.addEventListener("click", async () => {
         const email = document.getElementById("email-field").value.trim().toLowerCase();
@@ -64,7 +64,7 @@ if (forgotPassword) {
         }
 
         try {
-            await sendPasswordResetEmail(auth, email); //video: https://www.youtube.com/watch?v=XpMnUNWMyQI
+            await sendPasswordResetEmail(auth, email); 
             customAlert("Password reset email sent. Check your inbox. (It may appear in Spam/Trash)");
         } catch (error) {
             if (error.code === "auth/user-not-found") {
@@ -77,8 +77,7 @@ if (forgotPassword) {
     });
 }
 
-// google stuff
-const googleProvider = new GoogleAuthProvider(); // link: https://firebase.google.com/docs/auth/web/google-signin?utm_source
+const googleProvider = new GoogleAuthProvider(); 
 
 googleProvider.setCustomParameters({
     prompt: "select_account"
@@ -99,7 +98,7 @@ if (googleSignIn) {
                 const name = user.displayName.split(" ");
                 firstName = name[0];
 
-                if (name[1]) { // Not using last name
+                if (name[1]) { 
                     lastName = name[1];
                 }
             }
@@ -124,7 +123,6 @@ if (googleSignIn) {
             localStorage.setItem("loggedInUserId", user.uid);
             checkUserInfo(user);
         } catch (error) {
-            // console.error(error);
         }
     });
 }

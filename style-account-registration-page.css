@@ -1,3 +1,4 @@
+/* HTML Components */
 body {
     display: flex;
     justify-content: center;
@@ -21,6 +22,11 @@ body {
     animation-fill-mode: forwards;
 }
 
+h1:hover {
+    text-decoration-line: underline;
+}
+
+/* HTML Classes */
 .container {
     height: 440px;
     width: 350px;
@@ -47,6 +53,7 @@ body {
     animation: fadeOut 7s forwards;
 }
 
+/* HTML IDs */ 
 #first-name-field,
 #email-address-field,
 #email-password-field {
@@ -93,10 +100,6 @@ body {
     background-color: rgba(34, 67, 80, 0.8);
 }
 
-h1:hover {
-    text-decoration-line: underline;
-}
-
 #padlock-picture,
 #user-picture,
 #id-card,
@@ -121,6 +124,7 @@ h1:hover {
     font-weight: 900;
 }
 
+/* HTML @keyframes Animations */
 @keyframes fadeIn {
     0% {
         opacity: 0;

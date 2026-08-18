@@ -1,3 +1,4 @@
+/* HTML Components */
 body {
     display: flex;
     justify-content: center;
@@ -21,6 +22,58 @@ body {
     animation-fill-mode: forwards;
 }
 
+h1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figcaption:hover,
+h1:hover {
+    text-decoration-line: underline;
+}
+
+/* HTML Classes */
+.header-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 690px;
+    background-color: rgba(29, 28, 67, 0.5);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 2px white;
+}
+
+.search-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 120px;
+}
+
+.bottom-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 200px;
+    margin-top: -100px;
+}
+
+/* HTML IDs */ 
 #search-picture {
     background-color: rgba(59, 63, 93);
     border-radius: 20px;
@@ -32,11 +85,6 @@ body {
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-play-state: running;
-}
-
-figcaption:hover,
-h1:hover {
-    text-decoration-line: underline;
 }
 
 #search-picture:hover {
@@ -65,33 +113,6 @@ h1:hover {
     animation-play-state: running;
 }
 
-h1 {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 350px;
-    height: 690px;
-    background-color: rgba(29, 28, 67, 0.5);
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px 2px white;
-}
-
 #humidity-percentage,
 #wind-kilometers-per-hour,
 #pressure-value, 
@@ -104,15 +125,6 @@ h1 {
     text-align: center;
     font-weight: 750;
     color: white;
-}
-
-.search-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-    margin-top: 120px;
 }
 
 #wind-details,
@@ -151,15 +163,6 @@ h1 {
     font-weight: 750;
     font-size: 25px;
     width: 120px;
-}
-
-.bottom-layout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 200px;
-    margin-top: -100px;
 }
 
 #bottom-layout-bottom-row {
@@ -230,13 +233,6 @@ h1 {
     animation-play-state: running;
 }
 
-#search::placeholder,
-input[type="search"] {
-    color: white;
-    font-weight: 750;
-    font-size: 17px;
-}
-
 #submit {
     width: 200px;
     height: 25px;
@@ -244,6 +240,15 @@ input[type="search"] {
     border: none;
 }
 
+/* HTML Pseudo-Element Notation */
+#search::placeholder,
+input[type="search"] {
+    color: white;
+    font-weight: 750;
+    font-size: 17px;
+}
+
+/* HTML @keyframes Animations */
 @keyframes fadeIn {
     0% {
         opacity: 0;

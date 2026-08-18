@@ -40,7 +40,7 @@ function customAlert(message) {
 
     setTimeout(() => {
         alertBox.style.display = "none";
-    }, 3000); // Hides after 3 seconds
+    }, 3000); 
 }
 
 function showMessage(message, divId) {
@@ -125,6 +125,7 @@ if (signIn) {
                 localStorage.setItem('loggedInUserId', user.uid);
                 window.location.href = "index-main-page.html";
             })
+
             .catch((error) => {
                 const errorCode = error.code;
 
