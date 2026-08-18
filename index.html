@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,10 +14,10 @@
   </head>
   <body>
     <div class="container">
+      <div id="customAlert" class="alertBox">
+        <label id="alertText"></label>
       <h1>Login</h1>
       <form>
-        <div id="customAlert" class="alertBox">
-          <label id="alertText"></label>
         </div>
         <div id="signInMessage" class="messageDiv" style="display: none"></div>
         <div id="email-details">
@@ -26,13 +26,14 @@
             id="email-field"
             placeholder="Enter your email"
             required
-            aria-label="Enter your email."
+            aria-label="Enter your email"
           />
-          <img
+          <img  
             src="user-picture.png"
             height="25"
             width="25"
             id="user-picture"
+            alt="Email address"
           />
         </div>
         <br />
@@ -42,31 +43,36 @@
             id="password-field"
             placeholder="Enter your password"
             required
-            aria-label="Enter your password."
+            aria-label="Enter your password"
           />
           <img
             src="padlock-picture.png"
             height="25"
             width="25"
             id="padlock-picture"
+            alt="Password"
           />
         </div>
         <br />
         <div id="remember-and-forgot-layout">
           <div id="remember-me-details">
-            <input type="checkbox" id="checkbox" aria-label="Remember me." />
-            <label id="remember-me-word">Remember me</label>
+            <input type="checkbox" id="checkbox" aria-label="Remember me" />
+            <label id="remember-me-word" aria-label="Label - Remember me"
+              >Remember me</label
+            >
           </div>
-          <label id="forgot-password-word">Forgot Password?</label>
+          <label id="forgot-password-word"
+            >Forgot Password?</label
+          >
         </div>
         <br />
         <input type="button" value="Login" id="login" aria-label="Login" />
         <br />
         <br />
       </form>
-      <img src="google-logo.png" height="40" width="40" id="google-logo" />
+      <img src="google-logo.png" height="40" width="40" id="google-logo" alt="Google logo"/>
       <br />
-      <label
+      <label aria-label="Link - Don't have an account? Register"
         >Don't have an account? <span id="register-word">Register</span></label
       >
     </div>

@@ -21,8 +21,15 @@
             type="search"
             id="search"
             placeholder="   Enter your location"
+            aria-label="Enter your location"
           />
-          <img src="search.png" height="25" width="25" id="search-picture" />
+          <img
+            src="search.png"
+            height="25"
+            width="25"
+            id="search-picture"
+            alt="Search"
+          />
         </div>
         <br />
         <div class="header-details">
@@ -31,6 +38,7 @@
             height="45"
             width="50"
             id="location-picture"
+            alt="Location marker"
           />
           <h1 id="location-display">Location</h1>
         </div>
@@ -40,7 +48,12 @@
             id="temperature-display"
             readonly
             value="0"
-          /><span style="font-size: 25px; font-weight: 750">°C</span>
+            aria-label="Temperature in Celsius"
+          /><span
+            aria-label="Label - Degrees Celsius"
+            style="font-size: 25px; font-weight: 750"
+            >°C</span
+          >
         </div>
         <br />
         <label id="description">Description of weather!</label>
@@ -56,6 +69,7 @@
                     height="50"
                     width="50"
                     id="humidity-picture"
+                    alt="Humidity"
                   />
                 </figure>
                 <figcaption>Humidity (%)</figcaption>
@@ -64,6 +78,7 @@
                   id="humidity-percentage"
                   readonly
                   value="0"
+                  aria-label="Humidity in percentage"
                 />
               </div>
             </div>
@@ -75,6 +90,7 @@
                     height="50"
                     width="50"
                     id="wind-picture"
+                    alt="Wind speed"
                   />
                 </figure>
                 <figcaption>Wind Speed (km/h)</figcaption>
@@ -83,6 +99,7 @@
                   id="wind-kilometers-per-hour"
                   readonly
                   value="0"
+                  aria-label="Wind speed in kilometer per hour"
                 />
               </div>
             </div>
@@ -96,10 +113,17 @@
                     height="50"
                     width="50"
                     id="pressure-picture"
+                    alt="Pressure"
                   />
                 </figure>
                 <figcaption>Pressure (kPa)</figcaption>
-                <input type="number" id="pressure-value" readonly value="0" />
+                <input
+                  type="number"
+                  id="pressure-value"
+                  readonly
+                  value="0"
+                  aria-label="Pressure in kilopascals"
+                />
               </div>
             </div>
             <div id="wind-angle-details">
@@ -110,10 +134,17 @@
                     height="50"
                     width="50"
                     id="wind-angle-picture"
+                    alt="Wind angle"
                   />
                 </figure>
                 <figcaption>Wind Angle (θ)</figcaption>
-                <input type="number" id="wind-angle-value" readonly value="0" />
+                <input
+                  type="number"
+                  id="wind-angle-value"
+                  readonly
+                  value="0"
+                  aria-label="Wind angle in degrees"
+                />
               </div>
             </div>
           </div>
