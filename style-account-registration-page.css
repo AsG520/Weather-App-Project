@@ -51,6 +51,8 @@ h1:hover {
     font-size: 16px;
     opacity: 0;
     animation: fadeOut 7s forwards;
+    position: absolute;
+    transform: translateY(55px);
 }
 
 /* HTML IDs */ 
